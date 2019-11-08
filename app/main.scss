@@ -1,5 +1,120 @@
 @import '~bootstrap';
 
-div{
-    color: red;
+button:focus {
+    outline: none;
+}
+#topBar {
+    width: 100%;
+    min-height: 80px;
+    background-color: #0c5db8;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    div{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 50px;
+        width: 520px;
+        #src {
+            position: absolute;
+            left: 8px;
+            top: 8px;
+         }
+         button {
+             background: none;
+             border: none;
+             color: #ffffff;
+         }
+         input{
+             width: 400px;
+             height: 35px;
+             font-size: 18px;
+             border-radius: 15px;
+             padding-left: 40px;
+             padding-right: 10px;
+             box-shadow: inset 0px 0px 3px 1px rgba(12,93,193,0.54);
+             border: none;
+             background-color: #ffffff;
+             &:focus {
+                 outline: none;
+             }
+         }
+    }
+}
+#view {
+    width: 100%;
+    height: 94%;
+    background-image: url('./dist/photos/cars.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#selectCar {
+    width: 200px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0c5db8;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    select{
+        width: 150px;
+        height: 40px;
+        margin: 10px 0 10px 0;
+    }
+}
+#title {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding-right: 100px;
+    align-items: center;
+    h1{
+        width: 500px;
+        font-size: 50px;
+        color: #ffffff;
+    }
+}
+#navBar {
+    background-color: #49555f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 50px;
+    height: 40px;
+    p{
+        margin: 0;
+        color:#ffffff  ;
+    }
+    button {
+        color:#ffffff ;
+        background: none;
+        border: none;
+    }
+}
+#bottom {
+    div{
+        width: 100%;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 50px;
+        color: #ffffff;
+        background-color: #2f3942;
+        img{
+            position: relative;
+        }
+        p{
+            margin: 0;
+            font-size: 14px;
+        }
+    }
+}
+#all {
+    height: 100vh;
 }
